@@ -1,0 +1,724 @@
+
+Started : "Synthesize - XST".
+Running xst...
+Command Line: xst -intstyle ise -ifn "/users/cosic/varribas/Documents/KECCAK_FPGA/KECCAK_FPGA/keccak_fsm.xst" -ofn "/users/cosic/varribas/Documents/KECCAK_FPGA/KECCAK_FPGA/keccak_fsm.syr"
+Reading design: keccak_fsm.prj
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_based_latch_LUTs_less24/final_files/kecc_globals.vhd" into library work
+Parsing package <keccak_globals>.
+Parsing VHDL file "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_based_latch_LUTs_less24/final_files/theta_row.vhd" into library work
+Parsing entity <theta_row>.
+Parsing architecture <Behavioral> of entity <theta_row>.
+Parsing VHDL file "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_based_latch_LUTs_less24/final_files/theta_parity_adresses.vhd" into library work
+Parsing entity <theta_parity_adresses>.
+Parsing architecture <Behavioral> of entity <theta_parity_adresses>.
+Parsing VHDL file "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_based_latch_LUTs_less24/final_files/state_plane.vhd" into library work
+Parsing entity <state_plane>.
+Parsing architecture <Behavioral> of entity <state_plane>.
+Parsing VHDL file "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_based_latch_LUTs_less24/final_files/slice_parity.vhd" into library work
+Parsing entity <slice_parity>.
+Parsing architecture <Behavioral> of entity <slice_parity>.
+Parsing VHDL file "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_based_latch_LUTs_less24/final_files/theta_fpga.vhd" into library work
+Parsing entity <theta_fpga>.
+Parsing architecture <Behavioral> of entity <theta_fpga>.
+Parsing VHDL file "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_based_latch_LUTs_less24/final_files/state_reg.vhd" into library work
+Parsing entity <state_reg>.
+Parsing architecture <Behavioral> of entity <state_reg>.
+Parsing VHDL file "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_based_latch_LUTs_less24/final_files/rho_lane_optimized.vhd" into library work
+Parsing entity <rho_lane_opt>.
+Parsing architecture <Behavioral> of entity <rho_lane_opt>.
+Parsing VHDL file "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_based_latch_LUTs_less24/final_files/control.vhd" into library work
+Parsing entity <control>.
+Parsing architecture <Behavioral> of entity <control>.
+Parsing VHDL file "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_based_latch_LUTs_less24/final_files/chi_iota_row.vhd" into library work
+Parsing entity <chi_iota_row>.
+Parsing architecture <Behavioral> of entity <chi_iota_row>.
+Parsing VHDL file "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_based_latch_LUTs_less24/final_files/keccak_fsm.vhd" into library work
+Parsing entity <keccak_fsm>.
+Parsing architecture <Behavioral> of entity <keccak_fsm>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <keccak_fsm> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <state_reg> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <state_plane> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <theta_fpga> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <slice_parity> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <theta_row> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <theta_parity_adresses> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <rho_lane_opt> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <chi_iota_row> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <control> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <keccak_fsm>.
+    Related source file is "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_based_latch_LUTs_less24/final_files/keccak_fsm.vhd".
+INFO:Xst:3210 - "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_based_latch_LUTs_less24/final_files/keccak_fsm.vhd" line 201: Output port <last_slice<0>> of the instance <state_regss> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_based_latch_LUTs_less24/final_files/keccak_fsm.vhd" line 201: Output port <last_slice<1>> of the instance <state_regss> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_based_latch_LUTs_less24/final_files/keccak_fsm.vhd" line 201: Output port <last_slice<2>> of the instance <state_regss> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_based_latch_LUTs_less24/final_files/keccak_fsm.vhd" line 201: Output port <last_slice<3>> of the instance <state_regss> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_based_latch_LUTs_less24/final_files/keccak_fsm.vhd" line 201: Output port <last_slice<4>> of the instance <state_regss> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_based_latch_LUTs_less24/final_files/keccak_fsm.vhd" line 257: Output port <computing_pi> of the instance <control_mod> is unconnected or connected to loadless signal.
+    Found 10-bit adder for signal <n0036> created at line 1241.
+    Found 32x7-bit Read Only RAM for signal <_n0141>
+    Found 10-bit comparator greater for signal <count_reg[9]_GND_7_o_LessThan_7_o> created at line 252
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+	inferred  14 Multiplexer(s).
+Unit <keccak_fsm> synthesized.
+
+Synthesizing Unit <state_reg>.
+    Related source file is "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_based_latch_LUTs_less24/final_files/state_reg.vhd".
+    Summary:
+	inferred  16 Multiplexer(s).
+Unit <state_reg> synthesized.
+
+Synthesizing Unit <state_plane>.
+    Related source file is "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_based_latch_LUTs_less24/final_files/state_plane.vhd".
+    Summary:
+	no macro.
+Unit <state_plane> synthesized.
+
+Synthesizing Unit <theta_fpga>.
+    Related source file is "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_based_latch_LUTs_less24/final_files/theta_fpga.vhd".
+    Found 5-bit register for signal <parity_reg_reg>.
+    Found 5-bit register for signal <parity_last_reg>.
+    Found 5-bit register for signal <parity_reg>.
+    Found 6-bit adder for signal <count_reg[5]_GND_44_o_add_7_OUT> created at line 1241.
+    Found 6-bit adder for signal <count_reg[5]_GND_44_o_add_8_OUT> created at line 1241.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  15 D-type flip-flop(s).
+	inferred   6 Multiplexer(s).
+Unit <theta_fpga> synthesized.
+
+Synthesizing Unit <slice_parity>.
+    Related source file is "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_based_latch_LUTs_less24/final_files/slice_parity.vhd".
+    Summary:
+Unit <slice_parity> synthesized.
+
+Synthesizing Unit <theta_row>.
+    Related source file is "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_based_latch_LUTs_less24/final_files/theta_row.vhd".
+    Summary:
+	no macro.
+Unit <theta_row> synthesized.
+
+Synthesizing Unit <theta_parity_adresses>.
+    Related source file is "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_based_latch_LUTs_less24/final_files/theta_parity_adresses.vhd".
+    Summary:
+	no macro.
+Unit <theta_parity_adresses> synthesized.
+
+Synthesizing Unit <rho_lane_opt>.
+    Related source file is "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_based_latch_LUTs_less24/final_files/rho_lane_optimized.vhd".
+    Summary:
+	no macro.
+Unit <rho_lane_opt> synthesized.
+
+Synthesizing Unit <chi_iota_row>.
+    Related source file is "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_based_latch_LUTs_less24/final_files/chi_iota_row.vhd".
+    Summary:
+	no macro.
+Unit <chi_iota_row> synthesized.
+
+Synthesizing Unit <control>.
+    Related source file is "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_based_latch_LUTs_less24/final_files/control.vhd".
+    Found 5-bit register for signal <round_reg>.
+    Found 1-bit register for signal <eq_62_reg>.
+    Found 1-bit register for signal <eq_765_reg>.
+    Found 1-bit register for signal <eq_765_reg_reg>.
+    Found 10-bit register for signal <count_reg>.
+    Found 10-bit adder for signal <count_reg[9]_GND_78_o_add_0_OUT> created at line 1241.
+    Found 5-bit adder for signal <round_reg[4]_GND_78_o_add_2_OUT> created at line 1241.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  18 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <control> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 32x7-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 4
+ 10-bit adder                                          : 2
+ 5-bit adder                                           : 1
+ 6-bit adder                                           : 1
+# Registers                                            : 8
+ 1-bit register                                        : 3
+ 10-bit register                                       : 1
+ 5-bit register                                        : 4
+# Comparators                                          : 1
+ 10-bit comparator greater                             : 1
+# Multiplexers                                         : 37
+ 1-bit 2-to-1 multiplexer                              : 16
+ 5-bit 2-to-1 multiplexer                              : 20
+ 6-bit 2-to-1 multiplexer                              : 1
+# Xors                                                 : 10
+ 1-bit xor2                                            : 5
+ 1-bit xor5                                            : 5
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <control>.
+The following registers are absorbed into counter <round_reg>: 1 register on signal <round_reg>.
+The following registers are absorbed into counter <count_reg>: 1 register on signal <count_reg>.
+Unit <control> synthesized (advanced).
+
+Synthesizing (advanced) Unit <keccak_fsm>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0141> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <round_reg>     |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <keccak_fsm> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 32x7-bit single-port distributed Read Only RAM        : 1
+# Adders/Subtractors                                   : 3
+ 5-bit adder                                           : 1
+ 6-bit adder                                           : 2
+# Counters                                             : 2
+ 10-bit up counter                                     : 1
+ 5-bit up counter                                      : 1
+# Registers                                            : 18
+ Flip-Flops                                            : 18
+# Comparators                                          : 1
+ 10-bit comparator greater                             : 1
+# Multiplexers                                         : 38
+ 1-bit 2-to-1 multiplexer                              : 19
+ 5-bit 2-to-1 multiplexer                              : 18
+ 6-bit 2-to-1 multiplexer                              : 1
+# Xors                                                 : 10
+ 1-bit xor2                                            : 5
+ 1-bit xor5                                            : 5
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <state_plane> ...
+
+Optimizing unit <rho_lane_opt> ...
+
+Optimizing unit <keccak_fsm> ...
+
+Optimizing unit <state_reg> ...
+
+Optimizing unit <theta_fpga> ...
+
+Optimizing unit <control> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block keccak_fsm, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 33
+ Flip-Flops                                            : 33
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 88    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 5.054ns (Maximum Frequency: 197.847MHz)
+   Minimum input arrival time before clock: 2.270ns
+   Maximum output required time after clock: 4.960ns
+   Maximum combinational path delay: 3.091ns
+
+=========================================================================
+
+Process "Synthesize - XST" completed successfully
+
+Started : "Translate".
+Running ngdbuild...
+Command Line: ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_based_latch_LUTs_less24/final_files/keccak_fsm.ucf -p xc6vlx75t-ff484-3 keccak_fsm.ngc keccak_fsm.ngd
+
+Command Line:
+/esat/micas-data/software/xilinx_ise_14.7/ISE/bin/lin64/unwrapped/ngdbuild
+-intstyle ise -dd _ngo -nt timestamp -uc
+/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_based_latch_LUTs_less24/fin
+al_files/keccak_fsm.ucf -p xc6vlx75t-ff484-3 keccak_fsm.ngc keccak_fsm.ngd
+
+Reading NGO file
+"/users/cosic/varribas/Documents/KECCAK_FPGA/KECCAK_FPGA/keccak_fsm.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file
+"/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_based_latch_LUTs_less24/fi
+nal_files/keccak_fsm.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGD file "keccak_fsm.ngd" ...
+Total REAL time to NGDBUILD completion:  2 sec
+Total CPU time to NGDBUILD completion:   2 sec
+
+Writing NGDBUILD log file "keccak_fsm.bld"...
+
+NGDBUILD done.
+
+Process "Translate" completed successfully
+
+Started : "Map".
+Running map...
+Command Line: map -intstyle ise -p xc6vlx75t-ff484-3 -w -logic_opt on -ol high -xe n -t 1 -xt 0 -r 4 -global_opt area -equivalent_register_removal on -mt off -ir off -pr b -lc area -power off -o keccak_fsm_map.ncd keccak_fsm.ngd keccak_fsm.pcf
+Using target part "6vlx75tff484-3".
+Running global optimization...
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 19 secs 
+Total CPU  time at the beginning of Placer: 18 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:1453c9c6) REAL time: 20 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:1453c9c6) REAL time: 20 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:2f8cf5e6) REAL time: 20 secs 
+
+Phase 4.37  Local Placement Optimization
+Phase 4.37  Local Placement Optimization (Checksum:2f8cf5e6) REAL time: 20 secs 
+
+Phase 5.2  Initial Placement for Architecture Specific Features
+....
+Phase 5.2  Initial Placement for Architecture Specific Features
+(Checksum:a73c9ad4) REAL time: 24 secs 
+
+Phase 6.36  Local Placement Optimization
+Phase 6.36  Local Placement Optimization (Checksum:a73c9ad4) REAL time: 24 secs 
+
+Phase 7.30  Global Clock Region Assignment
+Phase 7.30  Global Clock Region Assignment (Checksum:a73c9ad4) REAL time: 24 secs 
+
+Phase 8.3  Local Placement Optimization
+.....
+Phase 8.3  Local Placement Optimization (Checksum:24bb594c) REAL time: 24 secs 
+
+Phase 9.5  Local Placement Optimization
+Phase 9.5  Local Placement Optimization (Checksum:24bb594c) REAL time: 24 secs 
+
+Phase 10.8  Global Placement
+..
+.................................................................
+.................................................................
+..
+Phase 10.8  Global Placement (Checksum:dac5658a) REAL time: 25 secs 
+
+Phase 11.5  Local Placement Optimization
+Phase 11.5  Local Placement Optimization (Checksum:dac5658a) REAL time: 25 secs 
+
+Phase 12.18  Placement Optimization
+Phase 12.18  Placement Optimization (Checksum:861c999f) REAL time: 25 secs 
+
+Phase 13.5  Local Placement Optimization
+Phase 13.5  Local Placement Optimization (Checksum:861c999f) REAL time: 25 secs 
+
+Phase 14.34  Placement Validation
+Phase 14.34  Placement Validation (Checksum:4e88f152) REAL time: 25 secs 
+
+Total REAL time to Placer completion: 25 secs 
+Total CPU  time to Placer completion: 25 secs 
+Running physical synthesis...
+
+Physical synthesis completed.
+Running post-placement packing...
+Writing output files...
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    0
+Slice Logic Utilization:
+  Number of Slice Registers:                    41 out of  93,120    1%
+    Number used as Flip Flops:                  33
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                8
+  Number of Slice LUTs:                        193 out of  46,560    1%
+    Number used as logic:                      137 out of  46,560    1%
+      Number using O6 output only:              76
+      Number using O5 output only:              11
+      Number using O5 and O6:                   50
+      Number used as ROM:                        0
+    Number used as Memory:                      55 out of  16,720    1%
+      Number used as Dual Port RAM:              0
+      Number used as Single Port RAM:            5
+        Number using O6 output only:             5
+        Number using O5 output only:             0
+        Number using O5 and O6:                  0
+      Number used as Shift Register:            50
+        Number using O6 output only:            50
+        Number using O5 output only:             0
+        Number using O5 and O6:                  0
+    Number used exclusively as route-thrus:      1
+      Number with same-slice register load:      0
+      Number with same-slice carry load:         1
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                    49 out of  11,640    1%
+  Number of LUT Flip Flop pairs used:          193
+    Number with an unused Flip Flop:           153 out of     193   79%
+    Number with an unused LUT:                   0 out of     193    0%
+    Number of fully used LUT-FF pairs:          40 out of     193   20%
+    Number of unique control sets:              30
+    Number of slice register sites lost
+      to control set restrictions:             168 out of  93,120    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        13 out of     240    5%
+    IOB Latches:                                 5
+
+Specific Feature Utilization:
+  Number of RAMB36E1/FIFO36E1s:                  0 out of     156    0%
+  Number of RAMB18E1/FIFO18E1s:                  0 out of     312    0%
+  Number of BUFG/BUFGCTRLs:                      1 out of      32    3%
+    Number used as BUFGs:                        1
+    Number used as BUFGCTRLs:                    0
+  Number of ILOGICE1/ISERDESE1s:                 5 out of     360    1%
+    Number used as ILOGICE1s:                    5
+    Number used as ISERDESE1s:                   0
+  Number of OLOGICE1/OSERDESE1s:                 0 out of     360    0%
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHCEs:                             0 out of      72    0%
+  Number of BUFIODQSs:                           0 out of      36    0%
+  Number of BUFRs:                               0 out of      18    0%
+  Number of CAPTUREs:                            0 out of       1    0%
+  Number of DSP48E1s:                            0 out of     288    0%
+  Number of EFUSE_USRs:                          0 out of       1    0%
+  Number of FRAME_ECCs:                          0 out of       1    0%
+  Number of GTXE1s:                              0 out of       8    0%
+  Number of IBUFDS_GTXE1s:                       0 out of       6    0%
+  Number of ICAPs:                               0 out of       2    0%
+  Number of IDELAYCTRLs:                         0 out of       9    0%
+  Number of IODELAYE1s:                          0 out of     360    0%
+  Number of MMCM_ADVs:                           0 out of       6    0%
+  Number of PCIE_2_0s:                           0 out of       1    0%
+  Number of STARTUPs:                            1 out of       1  100%
+  Number of SYSMONs:                             0 out of       1    0%
+  Number of TEMAC_SINGLEs:                       0 out of       4    0%
+
+Average Fanout of Non-Clock Nets:                2.71
+
+Peak Memory Usage:  1164 MB
+Total REAL time to MAP completion:  31 secs 
+Total CPU time to MAP completion:   31 secs 
+
+Mapping completed.
+See MAP report file "keccak_fsm_map.mrp" for details.
+
+Process "Map" completed successfully
+
+Started : "Place & Route".
+Running par...
+Command Line: par -w -intstyle ise -ol high -xe n -mt off keccak_fsm_map.ncd keccak_fsm.ncd keccak_fsm.pcf
+
+
+
+Constraints file: keccak_fsm.pcf.
+Loading device for application Rf_Device from file '6vlx75t.nph' in environment
+/esat/micas-data/software/xilinx_ise_14.7/ISE/.
+   "keccak_fsm" is an NCD, version 3.2, device xc6vlx75t, package ff484, speed -3
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 0.950 Volts. (default - Range: 0.950 to 1.050 Volts)
+
+INFO:Par:282 - No user timing constraints were detected or you have set the option to ignore timing constraints ("par
+   -x"). Place and Route will run in "Performance Evaluation Mode" to automatically improve the performance of all
+   internal clocks in this design. Because there are not defined timing requirements, a timing score will not be
+   reported in the PAR report in this mode. The PAR timing summary will list the performance achieved for each clock.
+   Note: For the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high".
+
+Device speed data version:  "PRODUCTION 1.17 2013-10-13".
+
+
+
+Device Utilization Summary:
+
+Slice Logic Utilization:
+  Number of Slice Registers:                    41 out of  93,120    1%
+    Number used as Flip Flops:                  33
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                8
+  Number of Slice LUTs:                        193 out of  46,560    1%
+    Number used as logic:                      137 out of  46,560    1%
+      Number using O6 output only:              76
+      Number using O5 output only:              11
+      Number using O5 and O6:                   50
+      Number used as ROM:                        0
+    Number used as Memory:                      55 out of  16,720    1%
+      Number used as Dual Port RAM:              0
+      Number used as Single Port RAM:            5
+        Number using O6 output only:             5
+        Number using O5 output only:             0
+        Number using O5 and O6:                  0
+      Number used as Shift Register:            50
+        Number using O6 output only:            50
+        Number using O5 output only:             0
+        Number using O5 and O6:                  0
+    Number used exclusively as route-thrus:      1
+      Number with same-slice register load:      0
+      Number with same-slice carry load:         1
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                    49 out of  11,640    1%
+  Number of LUT Flip Flop pairs used:          193
+    Number with an unused Flip Flop:           153 out of     193   79%
+    Number with an unused LUT:                   0 out of     193    0%
+    Number of fully used LUT-FF pairs:          40 out of     193   20%
+    Number of slice register sites lost
+      to control set restrictions:               0 out of  93,120    0%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        13 out of     240    5%
+    IOB Latches:                                 5
+
+Specific Feature Utilization:
+  Number of RAMB36E1/FIFO36E1s:                  0 out of     156    0%
+  Number of RAMB18E1/FIFO18E1s:                  0 out of     312    0%
+  Number of BUFG/BUFGCTRLs:                      1 out of      32    3%
+    Number used as BUFGs:                        1
+    Number used as BUFGCTRLs:                    0
+  Number of ILOGICE1/ISERDESE1s:                 5 out of     360    1%
+    Number used as ILOGICE1s:                    5
+    Number used as ISERDESE1s:                   0
+  Number of OLOGICE1/OSERDESE1s:                 0 out of     360    0%
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHCEs:                             0 out of      72    0%
+  Number of BUFIODQSs:                           0 out of      36    0%
+  Number of BUFRs:                               0 out of      18    0%
+  Number of CAPTUREs:                            0 out of       1    0%
+  Number of DSP48E1s:                            0 out of     288    0%
+  Number of EFUSE_USRs:                          0 out of       1    0%
+  Number of FRAME_ECCs:                          0 out of       1    0%
+  Number of GTXE1s:                              0 out of       8    0%
+  Number of IBUFDS_GTXE1s:                       0 out of       6    0%
+  Number of ICAPs:                               0 out of       2    0%
+  Number of IDELAYCTRLs:                         0 out of       9    0%
+  Number of IODELAYE1s:                          0 out of     360    0%
+  Number of MMCM_ADVs:                           0 out of       6    0%
+  Number of PCIE_2_0s:                           0 out of       1    0%
+  Number of STARTUPs:                            1 out of       1  100%
+  Number of SYSMONs:                             0 out of       1    0%
+  Number of TEMAC_SINGLEs:                       0 out of       4    0%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 6 secs 
+Finished initial Timing Analysis.  REAL time: 6 secs 
+
+Starting Router
+
+
+Phase  1  : 3299 unrouted;      REAL time: 7 secs 
+
+Phase  2  : 2773 unrouted;      REAL time: 7 secs 
+
+Phase  3  : 277 unrouted;      REAL time: 9 secs 
+
+Phase  4  : 277 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
+
+Updating file: keccak_fsm.ncd with current fully routed design.
+
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
+
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
+
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
+
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
+
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
+
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
+Total REAL time to Router completion: 11 secs 
+Total CPU time to Router completion: 11 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+INFO:Par:459 - The Clock Report is not displayed in the non timing-driven mode.
+Timing Score: 0 (Setup: 0, Hold: 0)
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     6.280ns|     N/A|           0
+  _BUFGP                                    | HOLD        |     0.125ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 11 secs 
+Total CPU time to PAR completion: 11 secs 
+
+Peak Memory Usage:  892 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 0
+Number of info messages: 2
+
+Writing design to file keccak_fsm.ncd
+
+
+
+PAR done!
+
+Process "Place & Route" completed successfully
+
+Started : "Generate Post-Place & Route Static Timing".
+Running trce...
+Command Line: trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml keccak_fsm.twx keccak_fsm.ncd -o keccak_fsm.twr keccak_fsm.pcf
+Loading device for application Rf_Device from file '6vlx75t.nph' in environment
+/esat/micas-data/software/xilinx_ise_14.7/ISE/.
+   "keccak_fsm" is an NCD, version 3.2, device xc6vlx75t, package ff484, speed
+-3
+
+Analysis completed Wed Mar 20 11:51:26 2019
+--------------------------------------------------------------------------------
+
+Generating Report ...
+
+Number of warnings: 0
+Total time: 6 secs 
+
+Process "Generate Post-Place & Route Static Timing" completed successfully
+
