@@ -1,0 +1,831 @@
+
+Started : "Synthesize - XST".
+Running xst...
+Command Line: xst -intstyle ise -ifn "/users/cosic/varribas/Documents/KECCAK_FPGA/KECCAK_FPGA/top_wrapper.xst" -ofn "/users/cosic/varribas/Documents/KECCAK_FPGA/KECCAK_FPGA/top_wrapper.syr"
+Reading design: top_wrapper.prj
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast/kecc_globals.vhd" into library work
+Parsing package <keccak_globals>.
+Parsing VHDL file "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast/teta.vhd" into library work
+Parsing entity <teta>.
+Parsing architecture <Behavioral> of entity <teta>.
+Parsing VHDL file "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast/rho.vhd" into library work
+Parsing entity <rho>.
+Parsing architecture <Behavioral> of entity <rho>.
+Parsing VHDL file "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast/pi.vhd" into library work
+Parsing entity <pi>.
+Parsing architecture <Behavioral> of entity <pi>.
+Parsing VHDL file "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast/iota.vhd" into library work
+Parsing entity <iota>.
+Parsing architecture <Behavioral> of entity <iota>.
+Parsing VHDL file "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast/chi.vhd" into library work
+Parsing entity <chi>.
+Parsing architecture <Behavioral> of entity <chi>.
+Parsing VHDL file "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast/keccak_round_constants_gen.vhd" into library work
+Parsing entity <keccak_round_constants_gen>.
+Parsing architecture <rtl> of entity <keccak_round_constants_gen>.
+Parsing VHDL file "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast/Keccak_round_blocks.vhd" into library work
+Parsing entity <keccak_round_blocks>.
+Parsing architecture <rtl> of entity <keccak_round_blocks>.
+Parsing VHDL file "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast/Keccak_f.vhd" into library work
+Parsing entity <Keccak_f>.
+Parsing architecture <Behavioral> of entity <keccak_f>.
+Parsing VHDL file "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast/top_wrapper.vhd" into library work
+Parsing entity <top_wrapper>.
+Parsing architecture <Behavioral> of entity <top_wrapper>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <top_wrapper> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Keccak_f> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <keccak_round_constants_gen> (architecture <rtl>) from library <work>.
+
+Elaborating entity <keccak_round_blocks> (architecture <rtl>) from library <work>.
+
+Elaborating entity <chi> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <teta> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <pi> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <rho> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <iota> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top_wrapper>.
+    Related source file is "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast/top_wrapper.vhd".
+    Found 1600-bit register for signal <s_out_reg>.
+    Found 1088-bit register for signal <s_in_reg>.
+    Summary:
+	inferred 2688 D-type flip-flop(s).
+Unit <top_wrapper> synthesized.
+
+Synthesizing Unit <Keccak_f>.
+    Related source file is "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast/Keccak_f.vhd".
+    Found 64-bit register for signal <round_reg<0><0>>.
+    Found 64-bit register for signal <round_reg<0><1>>.
+    Found 64-bit register for signal <round_reg<0><2>>.
+    Found 64-bit register for signal <round_reg<0><3>>.
+    Found 64-bit register for signal <round_reg<0><4>>.
+    Found 64-bit register for signal <round_reg<1><0>>.
+    Found 64-bit register for signal <round_reg<1><1>>.
+    Found 64-bit register for signal <round_reg<1><2>>.
+    Found 64-bit register for signal <round_reg<1><3>>.
+    Found 64-bit register for signal <round_reg<1><4>>.
+    Found 64-bit register for signal <round_reg<2><0>>.
+    Found 64-bit register for signal <round_reg<2><1>>.
+    Found 64-bit register for signal <round_reg<2><2>>.
+    Found 64-bit register for signal <round_reg<2><3>>.
+    Found 64-bit register for signal <round_reg<2><4>>.
+    Found 64-bit register for signal <round_reg<3><0>>.
+    Found 64-bit register for signal <round_reg<3><1>>.
+    Found 64-bit register for signal <round_reg<3><2>>.
+    Found 64-bit register for signal <round_reg<3><3>>.
+    Found 64-bit register for signal <round_reg<3><4>>.
+    Found 64-bit register for signal <round_reg<4><0>>.
+    Found 64-bit register for signal <round_reg<4><1>>.
+    Found 64-bit register for signal <round_reg<4><2>>.
+    Found 64-bit register for signal <round_reg<4><3>>.
+    Found 64-bit register for signal <round_reg<4><4>>.
+    Found 5-bit register for signal <round>.
+    Found 1-bit register for signal <ready_reg>.
+    Found 1-bit register for signal <tic_toc_reg>.
+    Found 5-bit adder for signal <round[4]_GND_7_o_add_1_OUT> created at line 1241.
+    Found 5-bit comparator lessequal for signal <n3777> created at line 125
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred 1607 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  19 Multiplexer(s).
+Unit <Keccak_f> synthesized.
+
+Synthesizing Unit <keccak_round_constants_gen>.
+    Related source file is "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast/keccak_round_constants_gen.vhd".
+    Found 32x64-bit Read Only RAM for signal <round_constant_signal>
+    Summary:
+	inferred   1 RAM(s).
+Unit <keccak_round_constants_gen> synthesized.
+
+Synthesizing Unit <keccak_round_blocks>.
+    Related source file is "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast/Keccak_round_blocks.vhd".
+    Summary:
+	no macro.
+Unit <keccak_round_blocks> synthesized.
+
+Synthesizing Unit <chi>.
+    Related source file is "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast/chi.vhd".
+    Summary:
+Unit <chi> synthesized.
+
+Synthesizing Unit <teta>.
+    Related source file is "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast/teta.vhd".
+    Found 64-bit register for signal <theta_reg<0><1>>.
+    Found 64-bit register for signal <theta_reg<0><2>>.
+    Found 64-bit register for signal <theta_reg<0><3>>.
+    Found 64-bit register for signal <theta_reg<0><4>>.
+    Found 64-bit register for signal <theta_reg<1><0>>.
+    Found 64-bit register for signal <theta_reg<1><1>>.
+    Found 64-bit register for signal <theta_reg<1><2>>.
+    Found 64-bit register for signal <theta_reg<1><3>>.
+    Found 64-bit register for signal <theta_reg<1><4>>.
+    Found 64-bit register for signal <theta_reg<2><0>>.
+    Found 64-bit register for signal <theta_reg<2><1>>.
+    Found 64-bit register for signal <theta_reg<2><2>>.
+    Found 64-bit register for signal <theta_reg<2><3>>.
+    Found 64-bit register for signal <theta_reg<2><4>>.
+    Found 64-bit register for signal <theta_reg<3><0>>.
+    Found 64-bit register for signal <theta_reg<3><1>>.
+    Found 64-bit register for signal <theta_reg<3><2>>.
+    Found 64-bit register for signal <theta_reg<3><3>>.
+    Found 64-bit register for signal <theta_reg<3><4>>.
+    Found 64-bit register for signal <theta_reg<4><0>>.
+    Found 64-bit register for signal <theta_reg<4><1>>.
+    Found 64-bit register for signal <theta_reg<4><2>>.
+    Found 64-bit register for signal <theta_reg<4><3>>.
+    Found 64-bit register for signal <theta_reg<4><4>>.
+    Found 64-bit register for signal <theta_reg<0><0>>.
+    Summary:
+	inferred 1600 D-type flip-flop(s).
+Unit <teta> synthesized.
+
+Synthesizing Unit <pi>.
+    Related source file is "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast/pi.vhd".
+    Summary:
+	no macro.
+Unit <pi> synthesized.
+
+Synthesizing Unit <rho>.
+    Related source file is "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast/rho.vhd".
+    Summary:
+	no macro.
+Unit <rho> synthesized.
+
+Synthesizing Unit <iota>.
+    Related source file is "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast/iota.vhd".
+    Summary:
+Unit <iota> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 32x64-bit single-port Read Only RAM                   : 1
+# Adders/Subtractors                                   : 1
+ 5-bit adder                                           : 1
+# Registers                                            : 55
+ 1-bit register                                        : 2
+ 1088-bit register                                     : 1
+ 1600-bit register                                     : 1
+ 5-bit register                                        : 1
+ 64-bit register                                       : 50
+# Comparators                                          : 1
+ 5-bit comparator lessequal                            : 1
+# Multiplexers                                         : 19
+ 1-bit 2-to-1 multiplexer                              : 1
+ 5-bit 2-to-1 multiplexer                              : 1
+ 64-bit 2-to-1 multiplexer                             : 17
+# Xors                                                 : 4992
+ 1-bit xor2                                            : 4672
+ 1-bit xor5                                            : 320
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Keccak_f>.
+The following registers are absorbed into counter <round>: 1 register on signal <round>.
+Unit <Keccak_f> synthesized (advanced).
+
+Synthesizing (advanced) Unit <keccak_round_constants_gen>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_round_constant_signal> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 64-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <round_number>  |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <round_constant_signal> |          |
+    -----------------------------------------------------------------------
+Unit <keccak_round_constants_gen> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 32x64-bit single-port distributed Read Only RAM       : 1
+# Counters                                             : 1
+ 5-bit up counter                                      : 1
+# Registers                                            : 5890
+ Flip-Flops                                            : 5890
+# Comparators                                          : 1
+ 5-bit comparator lessequal                            : 1
+# Multiplexers                                         : 18
+ 1-bit 2-to-1 multiplexer                              : 1
+ 64-bit 2-to-1 multiplexer                             : 17
+# Xors                                                 : 4992
+ 1-bit xor2                                            : 4672
+ 1-bit xor5                                            : 320
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <top_wrapper> ...
+
+Optimizing unit <Keccak_f> ...
+
+Optimizing unit <teta> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top_wrapper, actual ratio is 18.
+Replicating register s_out_reg_1087 to handle IOB=TRUE attribute
+Replicating register s_out_reg_1086 to handle IOB=TRUE attribute
+Replicating register s_out_reg_1085 to handle IOB=TRUE attribute
+Replicating register s_out_reg_1084 to handle IOB=TRUE attribute
+Replicating register s_out_reg_1083 to handle IOB=TRUE attribute
+Replicating register s_out_reg_1082 to handle IOB=TRUE attribute
+Replicating register s_out_reg_1081 to handle IOB=TRUE attribute
+Replicating register s_out_reg_1080 to handle IOB=TRUE attribute
+Replicating register perm/ready_reg to handle IOB=TRUE attribute
+
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 5904
+ Flip-Flops                                            : 5904
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 5904  |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 4.135ns (Maximum Frequency: 241.838MHz)
+   Minimum input arrival time before clock: 7.233ns
+   Maximum output required time after clock: 4.118ns
+   Maximum combinational path delay: No path found
+
+=========================================================================
+
+Process "Synthesize - XST" completed successfully
+
+Started : "Translate".
+Running ngdbuild...
+Command Line: ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast/topV6.ucf -p xc6slx75-csg484-2 top_wrapper.ngc top_wrapper.ngd
+
+Command Line:
+/esat/micas-data/software/xilinx_ise_14.7/ISE/bin/lin64/unwrapped/ngdbuild
+-intstyle ise -dd _ngo -nt timestamp -uc
+/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast/topV6.ucf -p
+xc6slx75-csg484-2 top_wrapper.ngc top_wrapper.ngd
+
+Reading NGO file
+"/users/cosic/varribas/Documents/KECCAK_FPGA/KECCAK_FPGA/top_wrapper.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file
+"/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast/topV6.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGD file "top_wrapper.ngd" ...
+Total REAL time to NGDBUILD completion:  3 sec
+Total CPU time to NGDBUILD completion:   3 sec
+
+Writing NGDBUILD log file "top_wrapper.bld"...
+
+NGDBUILD done.
+
+Process "Translate" completed successfully
+
+Started : "Map".
+Running map...
+Command Line: map -intstyle ise -p xc6slx75-csg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_wrapper_map.ncd top_wrapper.ngd top_wrapper.pcf
+Using target part "6slx75csg484-2".
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 10 secs 
+Total CPU  time at the beginning of Placer: 10 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:50944c1) REAL time: 11 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:50944c1) REAL time: 12 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:50944c1) REAL time: 12 secs 
+
+Phase 4.2  Initial Placement for Architecture Specific Features
+.....
+Phase 4.2  Initial Placement for Architecture Specific Features
+(Checksum:a86d4af1) REAL time: 18 secs 
+
+Phase 5.36  Local Placement Optimization
+Phase 5.36  Local Placement Optimization (Checksum:a86d4af1) REAL time: 18 secs 
+
+Phase 6.30  Global Clock Region Assignment
+Phase 6.30  Global Clock Region Assignment (Checksum:a86d4af1) REAL time: 18 secs 
+
+Phase 7.3  Local Placement Optimization
+...
+Phase 7.3  Local Placement Optimization (Checksum:7472743f) REAL time: 19 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:7472743f) REAL time: 19 secs 
+
+Phase 9.8  Global Placement
+...............................................................
+...................................................................................................................................
+..............................................................
+.........................................................................................
+Phase 9.8  Global Placement (Checksum:1f5a4879) REAL time: 1 mins 7 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:1f5a4879) REAL time: 1 mins 7 secs 
+
+Phase 11.18  Placement Optimization
+Phase 11.18  Placement Optimization (Checksum:bedc72af) REAL time: 1 mins 12 secs 
+
+Phase 12.5  Local Placement Optimization
+Phase 12.5  Local Placement Optimization (Checksum:bedc72af) REAL time: 1 mins 12 secs 
+
+Phase 13.34  Placement Validation
+Phase 13.34  Placement Validation (Checksum:48d0dbd7) REAL time: 1 mins 13 secs 
+
+Total REAL time to Placer completion: 1 mins 13 secs 
+Total CPU  time to Placer completion: 1 mins 12 secs 
+Running post-placement packing...
+Writing output files...
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    0
+Slice Logic Utilization:
+  Number of Slice Registers:                 5,887 out of  93,296    6%
+    Number used as Flip Flops:               5,887
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                      3,741 out of  46,648    8%
+    Number used as logic:                    3,537 out of  46,648    7%
+      Number using O6 output only:           1,738
+      Number using O5 output only:               0
+      Number using O5 and O6:                1,799
+      Number used as ROM:                        0
+    Number used as Memory:                       0 out of  11,072    0%
+    Number used exclusively as route-thrus:    204
+      Number with same-slice register load:    204
+      Number with same-slice carry load:         0
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                 1,138 out of  11,662    9%
+  Number of MUXCYs used:                         0 out of  23,324    0%
+  Number of LUT Flip Flop pairs used:        4,325
+    Number with an unused Flip Flop:           432 out of   4,325    9%
+    Number with an unused LUT:                 584 out of   4,325   13%
+    Number of fully used LUT-FF pairs:       3,309 out of   4,325   76%
+    Number of unique control sets:               5
+    Number of slice register sites lost
+      to control set restrictions:              17 out of  93,296    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        21 out of     328    6%
+    IOB Flip Flops:                             17
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                         0 out of     172    0%
+  Number of RAMB8BWERs:                          0 out of     344    0%
+  Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       1 out of      16    6%
+    Number used as BUFGs:                        1
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     0 out of      12    0%
+  Number of ILOGIC2/ISERDES2s:                   8 out of     442    1%
+    Number used as ILOGIC2s:                     8
+    Number used as ISERDES2s:                    0
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     442    0%
+  Number of OLOGIC2/OSERDES2s:                   9 out of     442    2%
+    Number used as OLOGIC2s:                     9
+    Number used as OSERDES2s:                    0
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     384    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            0 out of     132    0%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       4    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            0 out of       6    0%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                3.32
+
+Peak Memory Usage:  1075 MB
+Total REAL time to MAP completion:  1 mins 15 secs 
+Total CPU time to MAP completion:   1 mins 15 secs 
+
+Mapping completed.
+See MAP report file "top_wrapper_map.mrp" for details.
+
+Process "Map" completed successfully
+
+Started : "Place & Route".
+Running par...
+Command Line: par -w -intstyle ise -ol high -mt off top_wrapper_map.ncd top_wrapper.ncd top_wrapper.pcf
+
+
+
+Constraints file: top_wrapper.pcf.
+Loading device for application Rf_Device from file '6slx75.nph' in environment
+/esat/micas-data/software/xilinx_ise_14.7/ISE/.
+   "top_wrapper" is an NCD, version 3.2, device xc6slx75, package csg484, speed -2
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+INFO:Par:282 - No user timing constraints were detected or you have set the option to ignore timing constraints ("par
+   -x"). Place and Route will run in "Performance Evaluation Mode" to automatically improve the performance of all
+   internal clocks in this design. Because there are not defined timing requirements, a timing score will not be
+   reported in the PAR report in this mode. The PAR timing summary will list the performance achieved for each clock.
+   Note: For the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high".
+
+Device speed data version:  "PRODUCTION 1.23 2013-10-13".
+
+
+
+Device Utilization Summary:
+
+Slice Logic Utilization:
+  Number of Slice Registers:                 5,887 out of  93,296    6%
+    Number used as Flip Flops:               5,887
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                0
+  Number of Slice LUTs:                      3,741 out of  46,648    8%
+    Number used as logic:                    3,537 out of  46,648    7%
+      Number using O6 output only:           1,738
+      Number using O5 output only:               0
+      Number using O5 and O6:                1,799
+      Number used as ROM:                        0
+    Number used as Memory:                       0 out of  11,072    0%
+    Number used exclusively as route-thrus:    204
+      Number with same-slice register load:    204
+      Number with same-slice carry load:         0
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                 1,138 out of  11,662    9%
+  Number of MUXCYs used:                         0 out of  23,324    0%
+  Number of LUT Flip Flop pairs used:        4,325
+    Number with an unused Flip Flop:           432 out of   4,325    9%
+    Number with an unused LUT:                 584 out of   4,325   13%
+    Number of fully used LUT-FF pairs:       3,309 out of   4,325   76%
+    Number of slice register sites lost
+      to control set restrictions:               0 out of  93,296    0%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        21 out of     328    6%
+    IOB Flip Flops:                             17
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                         0 out of     172    0%
+  Number of RAMB8BWERs:                          0 out of     344    0%
+  Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       1 out of      16    6%
+    Number used as BUFGs:                        1
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     0 out of      12    0%
+  Number of ILOGIC2/ISERDES2s:                   8 out of     442    1%
+    Number used as ILOGIC2s:                     8
+    Number used as ISERDES2s:                    0
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     442    0%
+  Number of OLOGIC2/OSERDES2s:                   9 out of     442    2%
+    Number used as OLOGIC2s:                     9
+    Number used as OSERDES2s:                    0
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     384    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            0 out of     132    0%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       4    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            0 out of       6    0%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 6 secs 
+Finished initial Timing Analysis.  REAL time: 6 secs 
+
+Starting Router
+
+
+Phase  1  : 21846 unrouted;      REAL time: 7 secs 
+
+Phase  2  : 18954 unrouted;      REAL time: 8 secs 
+
+Phase  3  : 13534 unrouted;      REAL time: 17 secs 
+
+Phase  4  : 13534 unrouted; (Par is working to improve performance)     REAL time: 19 secs 
+
+Updating file: top_wrapper.ncd with current fully routed design.
+
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 38 secs 
+
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 38 secs 
+
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 38 secs 
+
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 38 secs 
+
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 38 secs 
+
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 39 secs 
+Total REAL time to Router completion: 39 secs 
+Total CPU time to Router completion: 40 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+INFO:Par:459 - The Clock Report is not displayed in the non timing-driven mode.
+Timing Score: 0 (Setup: 0, Hold: 0)
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     7.072ns|     N/A|           0
+  _BUFGP                                    | HOLD        |     0.223ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 40 secs 
+Total CPU time to PAR completion: 41 secs 
+
+Peak Memory Usage:  874 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 0
+Number of info messages: 2
+
+Writing design to file top_wrapper.ncd
+
+
+
+PAR done!
+WARNING:ProjectMgmt - File /users/cosic/varribas/Documents/KECCAK_FPGA/KECCAK_FPGA/keccak_fsm_map.ncd is missing.
+
+Process "Place & Route" completed successfully
+
+Started : "Generate Post-Place & Route Static Timing".
+Running trce...
+Command Line: trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml top_wrapper.twx top_wrapper.ncd -o top_wrapper.twr top_wrapper.pcf
+Loading device for application Rf_Device from file '6slx75.nph' in environment
+/esat/micas-data/software/xilinx_ise_14.7/ISE/.
+   "top_wrapper" is an NCD, version 3.2, device xc6slx75, package csg484, speed
+-2
+
+Analysis completed Wed Mar  6 10:43:37 2019
+--------------------------------------------------------------------------------
+
+Generating Report ...
+
+Number of warnings: 0
+Total time: 6 secs 
+
+Process "Generate Post-Place & Route Static Timing" completed successfully
+
+Started : "Generate Text Power Report".
+Running xpwr...
+Command Line: xpwr -intstyle ise -ol std top_wrapper.ncd top_wrapper.pcf -o top_wrapper.pwr
+Loading device for application Rf_Device from file '6slx75.nph' in environment
+/esat/micas-data/software/xilinx_ise_14.7/ISE/.
+   "top_wrapper" is an NCD, version 3.2, device xc6slx75, package csg484, speed
+-2
+
+INFO:Power:1693 - 
+   --------------------------------------------------------------
+                         The power estimate will be calculated using PRODUCTION
+   data.
+   --------------------------------------------------------------
+
+Design load 20% complete
+Design load 25% complete
+Design load 30% complete
+Design load 60% complete
+Design load 95% complete
+Design load 100% complete
+WARNING:PowerEstimator:270 - Power estimate is considered inaccurate. To see details, generate an advanced report with the "-v" switch.
+Running Vector-less Activity Propagation
+......
+Finished Running Vector-less Activity Propagation
+Finished Running Vector-less Activity Propagation 0 secs 
+WARNING:Power:1337 - Clock frequency for clock net "clk_BUFGP" is zero.
+WARNING:Power:1337 - Clock frequency for clock net "clk_BUFGP/IBUFG" is zero.
+WARNING:Power:1369 - Clock frequency for one or more clocks was not found through
+   timing constraints (PCF file) or simulation data.  Without knowing the
+   clock frequency of all clocks, dynamic power information for those clock
+   domains will default to zero which may under-estimate the power for this
+   design.  To avoid this warning, provide at least one of the following:
+     1. The proper timing constraints (PERIOD) for clocks (re-implement design
+        and load the newly generated PCF file into XPower Analyzer)
+     2. A post PAR simulation-generated VCD or SAIF file indicating clock
+        frequencies
+     3. The clock frequency for clocks in the "By Type -> Clocks" view in the
+        XPower Analyzer GUI and then applying "Update Power Analysis"
+Power report saved as top_wrapper.pwr.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                                          Xilinx XPower Analyzer                                                                           |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Release                | 14.7 - P.20131013 (lin64)                                                                                                                        |
+| Command Line           | /esat/micas-data/software/xilinx_ise_14.7/ISE/bin/lin64/unwrapped/xpwr -intstyle ise -ol std top_wrapper.ncd top_wrapper.pcf -o top_wrapper.pwr  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1.  Settings
+1.1.  Project
+-----------------------------------------------
+|                   Project                   |
+-----------------------------------------------
+| Design File               | top_wrapper.ncd |
+| Settings File             | NA              |
+| Physical Constraints File | top_wrapper.pcf |
+| Simulation Activity File  | NA              |
+| Design Nets Matched       | NA              |
+| Simulation Nets Matched   | NA              |
+-----------------------------------------------
+
+1.2.  Device
+-------------------------------------------------
+|                    Device                     |
+-------------------------------------------------
+| Family           | Spartan6                   |
+| Part             | xc6slx75                   |
+| Package          | csg484                     |
+| Temp Grade       | C-Grade                    |
+| Process          | Typical                    |
+| Speed Grade      | -2                         |
+| Characterization | Production,v1.3,2011-05-04 |
+-------------------------------------------------
+
+2.  Summary
+2.1.  On-Chip Power Summary
+-----------------------------------------------------------------------------
+|                           On-Chip Power Summary                           |
+-----------------------------------------------------------------------------
+|        On-Chip        | Power (mW) |  Used  | Available | Utilization (%) |
+-----------------------------------------------------------------------------
+| Clocks                |       0.59 |      1 |    ---    |       ---       |
+| Logic                 |       0.00 |   3741 |     46648 |               8 |
+| Signals               |       0.00 |   6453 |    ---    |       ---       |
+| IOs                   |       0.00 |     21 |       328 |               6 |
+| Static Power          |      63.99 |        |           |                 |
+| Total                 |      64.59 |        |           |                 |
+-----------------------------------------------------------------------------
+
+2.3.  Power Supply Summary
+---------------------------------------------------------
+|                 Power Supply Summary                  |
+---------------------------------------------------------
+|                      | Total | Dynamic | Static Power |
+---------------------------------------------------------
+| Supply Power (mW)    | 64.59 | 0.59    | 63.99        |
+---------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------
+|                                            Power Supply Currents                                            |
+---------------------------------------------------------------------------------------------------------------
+|     Supply Source     | Supply Voltage | Total Current (mA) | Dynamic Current (mA) | Quiescent Current (mA) |
+---------------------------------------------------------------------------------------------------------------
+| Vccint                |          1.200 |              30.64 |                 0.49 |                  30.14 |
+| Vccaux                |          2.500 |               7.13 |                 0.00 |                   7.13 |
+| Vcco25                |          2.500 |               4.00 |                 0.00 |                   4.00 |
+---------------------------------------------------------------------------------------------------------------
+
+
+Analysis completed: Wed Mar  6 10:43:47 2019
+----------------------------------------------------------------
+
+Number of error messages: 0
+Number of warning messages: 4
+Number of info messages: 1
+
+
+Process "Generate Text Power Report" completed successfully

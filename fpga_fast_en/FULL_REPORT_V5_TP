@@ -1,0 +1,951 @@
+
+Started : "Synthesize - XST".
+Running xst...
+Command Line: xst -intstyle ise -ifn "/users/cosic/varribas/Documents/KECCAK_FPGA/KECCAK_FPGA/top_wrapper.xst" -ofn "/users/cosic/varribas/Documents/KECCAK_FPGA/KECCAK_FPGA/top_wrapper.syr"
+Reading design: top_wrapper.prj
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast_en/kecc_globals.vhd" in Library work.
+Compiling vhdl file "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast_en/chi.vhd" in Library work.
+Architecture behavioral of Entity chi is up to date.
+Compiling vhdl file "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast_en/teta.vhd" in Library work.
+Architecture behavioral of Entity teta is up to date.
+Compiling vhdl file "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast_en/pi.vhd" in Library work.
+Architecture behavioral of Entity pi is up to date.
+Compiling vhdl file "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast_en/rho.vhd" in Library work.
+Architecture behavioral of Entity rho is up to date.
+Compiling vhdl file "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast_en/iota.vhd" in Library work.
+Architecture behavioral of Entity iota is up to date.
+Compiling vhdl file "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast_en/keccak_round_constants_gen.vhd" in Library work.
+Architecture rtl of Entity keccak_round_constants_gen is up to date.
+Compiling vhdl file "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast_en/Keccak_round_blocks.vhd" in Library work.
+Architecture rtl of Entity keccak_round_blocks is up to date.
+Compiling vhdl file "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast_en/Keccak_f.vhd" in Library work.
+Architecture behavioral of Entity keccak_f is up to date.
+Compiling vhdl file "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast_en/top_wrapper.vhd" in Library work.
+Architecture behavioral of Entity top_wrapper is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <top_wrapper> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Keccak_f> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <keccak_round_constants_gen> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <keccak_round_blocks> in library <work> (architecture <rtl>).
+
+Analyzing hierarchy for entity <chi> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <teta> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <pi> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <rho> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <iota> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <top_wrapper> in library <work> (Architecture <behavioral>).
+Entity <top_wrapper> analyzed. Unit <top_wrapper> generated.
+
+Analyzing Entity <Keccak_f> in library <work> (Architecture <behavioral>).
+Entity <Keccak_f> analyzed. Unit <Keccak_f> generated.
+
+Analyzing Entity <keccak_round_constants_gen> in library <work> (Architecture <rtl>).
+Entity <keccak_round_constants_gen> analyzed. Unit <keccak_round_constants_gen> generated.
+
+Analyzing Entity <keccak_round_blocks> in library <work> (Architecture <rtl>).
+Entity <keccak_round_blocks> analyzed. Unit <keccak_round_blocks> generated.
+
+Analyzing Entity <chi> in library <work> (Architecture <behavioral>).
+Entity <chi> analyzed. Unit <chi> generated.
+
+Analyzing Entity <teta> in library <work> (Architecture <behavioral>).
+Entity <teta> analyzed. Unit <teta> generated.
+
+Analyzing Entity <pi> in library <work> (Architecture <behavioral>).
+Entity <pi> analyzed. Unit <pi> generated.
+
+Analyzing Entity <rho> in library <work> (Architecture <behavioral>).
+Entity <rho> analyzed. Unit <rho> generated.
+
+Analyzing Entity <iota> in library <work> (Architecture <behavioral>).
+Entity <iota> analyzed. Unit <iota> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <keccak_round_constants_gen>.
+    Related source file is "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast_en/keccak_round_constants_gen.vhd".
+    Found 32x64-bit ROM for signal <round_constant_signal>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <keccak_round_constants_gen> synthesized.
+
+
+Synthesizing Unit <chi>.
+    Related source file is "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast_en/chi.vhd".
+Unit <chi> synthesized.
+
+
+Synthesizing Unit <teta>.
+    Related source file is "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast_en/teta.vhd".
+WARNING:Xst:1780 - Signal <theta_reg<4>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <theta_reg<3>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <theta_reg<2>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <theta_reg<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <theta_reg<0>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <theta_next<4>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <theta_next<3>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <theta_next<2>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <theta_next<1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <theta_next<0>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sum_sheet_reg> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sum_sheet_next> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit xor2 for signal <$xor0000> created at line 133.
+    Found 1-bit xor2 for signal <$xor0001> created at line 133.
+    Found 1-bit xor2 for signal <$xor0002> created at line 133.
+    Found 1-bit xor2 for signal <$xor0003> created at line 133.
+    Found 1-bit xor2 for signal <$xor0004> created at line 133.
+    Found 1-bit xor2 for signal <$xor0005> created at line 133.
+    Found 1-bit xor2 for signal <$xor0006> created at line 133.
+    Found 1-bit xor2 for signal <$xor0007> created at line 133.
+    Found 1-bit xor2 for signal <$xor0008> created at line 133.
+    Found 1-bit xor2 for signal <$xor0009> created at line 133.
+    Found 1-bit xor2 for signal <$xor0010> created at line 133.
+    Found 1-bit xor2 for signal <$xor0011> created at line 133.
+    Found 1-bit xor2 for signal <$xor0012> created at line 133.
+    Found 1-bit xor2 for signal <$xor0013> created at line 133.
+    Found 1-bit xor2 for signal <$xor0014> created at line 133.
+    Found 1-bit xor2 for signal <$xor0015> created at line 125.
+    Found 1-bit xor2 for signal <$xor0016> created at line 133.
+    Found 1-bit xor2 for signal <$xor0017> created at line 133.
+    Found 1-bit xor2 for signal <$xor0018> created at line 125.
+    Found 1-bit xor2 for signal <$xor0019> created at line 133.
+    Found 1-bit xor2 for signal <$xor0020> created at line 133.
+    Found 1-bit xor2 for signal <$xor0021> created at line 125.
+    Found 1-bit xor2 for signal <$xor0022> created at line 133.
+    Found 1-bit xor2 for signal <$xor0023> created at line 133.
+    Found 1-bit xor2 for signal <$xor0024> created at line 125.
+    Found 1-bit xor2 for signal <$xor0025> created at line 133.
+    Found 1-bit xor2 for signal <$xor0026> created at line 133.
+    Found 1-bit xor2 for signal <$xor0027> created at line 125.
+    Found 1-bit xor2 for signal <$xor0028> created at line 133.
+    Found 1-bit xor2 for signal <$xor0029> created at line 133.
+    Found 1-bit xor2 for signal <$xor0030> created at line 125.
+    Found 1-bit xor2 for signal <$xor0031> created at line 125.
+    Found 1-bit xor2 for signal <$xor0032> created at line 133.
+    Found 1-bit xor2 for signal <$xor0033> created at line 133.
+    Found 1-bit xor2 for signal <$xor0034> created at line 125.
+    Found 1-bit xor2 for signal <$xor0035> created at line 125.
+    Found 1-bit xor2 for signal <$xor0036> created at line 133.
+    Found 1-bit xor2 for signal <$xor0037> created at line 133.
+    Found 1-bit xor2 for signal <$xor0038> created at line 125.
+    Found 1-bit xor2 for signal <$xor0039> created at line 125.
+    Found 1-bit xor2 for signal <$xor0040> created at line 133.
+    Found 1-bit xor2 for signal <$xor0041> created at line 133.
+    Found 1-bit xor2 for signal <$xor0042> created at line 125.
+    Found 1-bit xor2 for signal <$xor0043> created at line 125.
+    Found 1-bit xor2 for signal <$xor0044> created at line 133.
+    Found 1-bit xor2 for signal <$xor0045> created at line 133.
+    Found 1-bit xor2 for signal <$xor0046> created at line 125.
+    Found 1-bit xor2 for signal <$xor0047> created at line 125.
+    Found 1-bit xor2 for signal <$xor0048> created at line 125.
+    Found 1-bit xor2 for signal <$xor0049> created at line 133.
+    Found 1-bit xor2 for signal <$xor0050> created at line 133.
+    Found 1-bit xor2 for signal <$xor0051> created at line 125.
+    Found 1-bit xor2 for signal <$xor0052> created at line 125.
+    Found 1-bit xor2 for signal <$xor0053> created at line 125.
+    Found 1-bit xor2 for signal <$xor0054> created at line 139.
+    Found 1-bit xor2 for signal <$xor0055> created at line 133.
+    Found 1-bit xor2 for signal <$xor0056> created at line 133.
+    Found 1-bit xor2 for signal <$xor0057> created at line 125.
+    Found 1-bit xor2 for signal <$xor0058> created at line 125.
+    Found 1-bit xor2 for signal <$xor0059> created at line 125.
+    Found 1-bit xor2 for signal <$xor0060> created at line 141.
+    Found 1-bit xor2 for signal <$xor0061> created at line 133.
+    Found 1-bit xor2 for signal <$xor0062> created at line 133.
+    Found 1-bit xor2 for signal <$xor0063> created at line 125.
+    Found 1-bit xor2 for signal <$xor0064> created at line 125.
+    Found 1-bit xor2 for signal <$xor0065> created at line 125.
+    Found 1-bit xor2 for signal <$xor0066> created at line 141.
+    Found 1-bit xor2 for signal <$xor0067> created at line 133.
+    Found 1-bit xor2 for signal <$xor0068> created at line 133.
+    Found 1-bit xor2 for signal <$xor0069> created at line 125.
+    Found 1-bit xor2 for signal <$xor0070> created at line 125.
+    Found 1-bit xor2 for signal <$xor0071> created at line 125.
+    Found 1-bit xor2 for signal <$xor0072> created at line 141.
+    Found 1-bit xor2 for signal <$xor0073> created at line 133.
+    Found 1-bit xor2 for signal <$xor0074> created at line 133.
+    Found 1-bit xor2 for signal <$xor0075> created at line 125.
+    Found 1-bit xor2 for signal <$xor0076> created at line 125.
+    Found 1-bit xor2 for signal <$xor0077> created at line 125.
+    Found 1-bit xor2 for signal <$xor0078> created at line 125.
+    Found 1-bit xor2 for signal <$xor0079> created at line 141.
+    Found 1-bit xor2 for signal <$xor0080> created at line 133.
+    Found 1-bit xor2 for signal <$xor0081> created at line 133.
+    Found 1-bit xor2 for signal <$xor0082> created at line 125.
+    Found 1-bit xor2 for signal <$xor0083> created at line 125.
+    Found 1-bit xor2 for signal <$xor0084> created at line 125.
+    Found 1-bit xor2 for signal <$xor0085> created at line 125.
+    Found 1-bit xor2 for signal <$xor0086> created at line 141.
+    Found 1-bit xor2 for signal <$xor0087> created at line 133.
+    Found 1-bit xor2 for signal <$xor0088> created at line 133.
+    Found 1-bit xor2 for signal <$xor0089> created at line 125.
+    Found 1-bit xor2 for signal <$xor0090> created at line 125.
+    Found 1-bit xor2 for signal <$xor0091> created at line 125.
+    Found 1-bit xor2 for signal <$xor0092> created at line 125.
+    Found 1-bit xor2 for signal <$xor0093> created at line 141.
+    Found 1-bit xor2 for signal <$xor0094> created at line 133.
+    Found 1-bit xor2 for signal <$xor0095> created at line 133.
+    Found 1-bit xor2 for signal <$xor0096> created at line 125.
+    Found 1-bit xor2 for signal <$xor0097> created at line 125.
+    Found 1-bit xor2 for signal <$xor0098> created at line 125.
+    Found 1-bit xor2 for signal <$xor0099> created at line 125.
+    Found 1-bit xor2 for signal <$xor0100> created at line 141.
+    Found 1-bit xor2 for signal <$xor0101> created at line 133.
+    Found 1-bit xor2 for signal <$xor0102> created at line 133.
+    Found 1-bit xor2 for signal <$xor0103> created at line 125.
+    Found 1-bit xor2 for signal <$xor0104> created at line 125.
+    Found 1-bit xor2 for signal <$xor0105> created at line 125.
+    Found 1-bit xor2 for signal <$xor0106> created at line 125.
+    Found 1-bit xor2 for signal <$xor0107> created at line 125.
+    Found 1-bit xor2 for signal <$xor0108> created at line 141.
+    Found 1-bit xor2 for signal <$xor0109> created at line 133.
+    Found 1-bit xor2 for signal <$xor0110> created at line 133.
+    Found 1-bit xor2 for signal <$xor0111> created at line 125.
+    Found 1-bit xor2 for signal <$xor0112> created at line 125.
+    Found 1-bit xor2 for signal <$xor0113> created at line 125.
+    Found 1-bit xor2 for signal <$xor0114> created at line 125.
+    Found 1-bit xor2 for signal <$xor0115> created at line 125.
+    Found 1-bit xor2 for signal <$xor0116> created at line 141.
+    Found 1-bit xor2 for signal <$xor0117> created at line 133.
+    Found 1-bit xor2 for signal <$xor0118> created at line 125.
+    Found 1-bit xor2 for signal <$xor0119> created at line 125.
+    Found 1-bit xor2 for signal <$xor0120> created at line 125.
+    Found 1-bit xor2 for signal <$xor0121> created at line 125.
+    Found 1-bit xor2 for signal <$xor0122> created at line 125.
+    Found 1-bit xor2 for signal <$xor0123> created at line 125.
+    Found 1-bit xor2 for signal <$xor0124> created at line 125.
+    Found 1-bit xor2 for signal <$xor0125> created at line 125.
+    Found 1-bit xor2 for signal <$xor0126> created at line 125.
+    Found 1-bit xor2 for signal <$xor0127> created at line 123.
+    Found 1-bit xor2 for signal <$xor0128> created at line 125.
+    Found 1-bit xor2 for signal <$xor0129> created at line 125.
+    Found 1-bit xor2 for signal <$xor0130> created at line 125.
+    Found 1-bit xor2 for signal <$xor0131> created at line 125.
+    Found 1-bit xor2 for signal <$xor0132> created at line 125.
+    Found 1-bit xor2 for signal <$xor0133> created at line 125.
+    Found 1-bit xor2 for signal <$xor0134> created at line 125.
+    Found 1-bit xor2 for signal <$xor0135> created at line 125.
+    Found 1-bit xor2 for signal <$xor0136> created at line 125.
+    Found 1-bit xor2 for signal <$xor0137> created at line 125.
+    Found 1-bit xor2 for signal <$xor0138> created at line 125.
+    Found 1-bit xor2 for signal <$xor0139> created at line 125.
+    Found 1-bit xor2 for signal <$xor0140> created at line 125.
+    Found 1-bit xor2 for signal <$xor0141> created at line 125.
+    Found 1-bit xor2 for signal <$xor0142> created at line 125.
+    Found 1-bit xor2 for signal <$xor0143> created at line 125.
+    Found 1-bit xor2 for signal <$xor0144> created at line 125.
+    Found 1-bit xor2 for signal <$xor0145> created at line 125.
+    Found 1-bit xor2 for signal <$xor0146> created at line 125.
+    Found 1-bit xor2 for signal <$xor0147> created at line 125.
+    Found 1-bit xor2 for signal <$xor0148> created at line 125.
+    Found 1-bit xor2 for signal <$xor0149> created at line 125.
+    Found 1-bit xor2 for signal <$xor0150> created at line 125.
+    Found 1-bit xor2 for signal <$xor0151> created at line 125.
+    Found 1-bit xor2 for signal <$xor0152> created at line 125.
+    Found 1-bit xor2 for signal <$xor0153> created at line 125.
+    Found 1-bit xor2 for signal <$xor0154> created at line 125.
+    Found 1-bit xor2 for signal <$xor0155> created at line 125.
+    Found 1-bit xor2 for signal <$xor0156> created at line 125.
+    Found 1-bit xor2 for signal <$xor0157> created at line 125.
+    Found 1-bit xor2 for signal <$xor0158> created at line 125.
+    Found 1-bit xor2 for signal <$xor0159> created at line 125.
+    Found 1-bit xor2 for signal <$xor0160> created at line 125.
+    Found 1-bit xor2 for signal <$xor0161> created at line 125.
+    Found 1-bit xor2 for signal <$xor0162> created at line 125.
+    Found 1-bit xor2 for signal <$xor0163> created at line 125.
+    Found 1-bit xor2 for signal <$xor0164> created at line 125.
+    Found 1-bit xor2 for signal <$xor0165> created at line 125.
+    Found 1-bit xor2 for signal <$xor0166> created at line 125.
+    Found 1-bit xor2 for signal <$xor0167> created at line 125.
+    Found 1-bit xor2 for signal <$xor0168> created at line 125.
+    Found 1-bit xor2 for signal <$xor0169> created at line 125.
+    Found 1-bit xor2 for signal <$xor0170> created at line 141.
+    Found 1-bit xor2 for signal <$xor0171> created at line 125.
+    Found 1-bit xor2 for signal <$xor0172> created at line 125.
+    Found 1-bit xor2 for signal <$xor0173> created at line 125.
+    Found 1-bit xor2 for signal <$xor0174> created at line 125.
+    Found 1-bit xor2 for signal <$xor0175> created at line 125.
+    Found 1-bit xor2 for signal <$xor0176> created at line 125.
+    Found 1-bit xor2 for signal <$xor0177> created at line 125.
+    Found 1-bit xor2 for signal <$xor0178> created at line 141.
+    Found 1-bit xor2 for signal <$xor0179> created at line 125.
+    Found 1-bit xor2 for signal <$xor0180> created at line 125.
+    Found 1-bit xor2 for signal <$xor0181> created at line 125.
+    Found 1-bit xor2 for signal <$xor0182> created at line 125.
+    Found 1-bit xor2 for signal <$xor0183> created at line 125.
+    Found 1-bit xor2 for signal <$xor0184> created at line 125.
+    Found 1-bit xor2 for signal <$xor0185> created at line 141.
+    Found 1-bit xor2 for signal <$xor0186> created at line 125.
+    Found 1-bit xor2 for signal <$xor0187> created at line 125.
+    Found 1-bit xor2 for signal <$xor0188> created at line 125.
+    Found 1-bit xor2 for signal <$xor0189> created at line 125.
+    Found 1-bit xor2 for signal <$xor0190> created at line 125.
+    Found 1-bit xor2 for signal <$xor0191> created at line 141.
+    Found 1-bit xor2 for signal <$xor0192> created at line 125.
+    Found 1-bit xor2 for signal <$xor0193> created at line 125.
+    Found 1-bit xor2 for signal <$xor0194> created at line 125.
+    Found 1-bit xor2 for signal <$xor0195> created at line 125.
+    Found 1-bit xor2 for signal <$xor0196> created at line 141.
+    Found 1-bit xor2 for signal <$xor0197> created at line 125.
+    Found 1-bit xor2 for signal <$xor0198> created at line 125.
+    Found 1-bit xor2 for signal <$xor0199> created at line 125.
+    Found 1-bit xor2 for signal <$xor0200> created at line 125.
+    Found 1-bit xor2 for signal <$xor0201> created at line 141.
+    Found 1-bit xor2 for signal <$xor0202> created at line 141.
+    Found 1-bit xor2 for signal <$xor0203> created at line 125.
+    Found 1-bit xor2 for signal <$xor0204> created at line 125.
+    Found 1-bit xor2 for signal <$xor0205> created at line 125.
+    Found 1-bit xor2 for signal <$xor0206> created at line 125.
+    Found 1-bit xor2 for signal <$xor0207> created at line 141.
+    Found 1-bit xor2 for signal <$xor0208> created at line 141.
+    Found 1-bit xor2 for signal <$xor0209> created at line 125.
+    Found 1-bit xor2 for signal <$xor0210> created at line 125.
+    Found 1-bit xor2 for signal <$xor0211> created at line 125.
+    Found 1-bit xor2 for signal <$xor0212> created at line 125.
+    Found 1-bit xor2 for signal <$xor0213> created at line 141.
+    Found 1-bit xor2 for signal <$xor0214> created at line 141.
+    Found 1-bit xor2 for signal <$xor0215> created at line 125.
+    Found 1-bit xor2 for signal <$xor0216> created at line 125.
+    Found 1-bit xor2 for signal <$xor0217> created at line 125.
+    Found 1-bit xor2 for signal <$xor0218> created at line 125.
+    Found 1-bit xor2 for signal <$xor0219> created at line 141.
+    Found 1-bit xor2 for signal <$xor0220> created at line 141.
+    Found 1-bit xor2 for signal <$xor0221> created at line 125.
+    Found 1-bit xor2 for signal <$xor0222> created at line 125.
+    Found 1-bit xor2 for signal <$xor0223> created at line 125.
+    Found 1-bit xor2 for signal <$xor0224> created at line 125.
+    Found 1-bit xor2 for signal <$xor0225> created at line 141.
+    Found 1-bit xor2 for signal <$xor0226> created at line 141.
+    Found 1-bit xor2 for signal <$xor0227> created at line 125.
+    Found 1-bit xor2 for signal <$xor0228> created at line 125.
+    Found 1-bit xor2 for signal <$xor0229> created at line 125.
+    Found 1-bit xor2 for signal <$xor0230> created at line 125.
+    Found 1-bit xor2 for signal <$xor0231> created at line 141.
+    Found 1-bit xor2 for signal <$xor0232> created at line 141.
+    Found 1-bit xor2 for signal <$xor0233> created at line 125.
+    Found 1-bit xor2 for signal <$xor0234> created at line 125.
+    Found 1-bit xor2 for signal <$xor0235> created at line 125.
+    Found 1-bit xor2 for signal <$xor0236> created at line 141.
+    Found 1-bit xor2 for signal <$xor0237> created at line 141.
+    Found 1-bit xor2 for signal <$xor0238> created at line 125.
+    Found 1-bit xor2 for signal <$xor0239> created at line 125.
+    Found 1-bit xor2 for signal <$xor0240> created at line 141.
+    Found 1-bit xor2 for signal <$xor0241> created at line 141.
+    Found 1-bit xor2 for signal <$xor0242> created at line 125.
+    Found 1-bit xor2 for signal <$xor0243> created at line 125.
+    Found 1-bit xor2 for signal <$xor0244> created at line 141.
+    Found 1-bit xor2 for signal <$xor0245> created at line 141.
+    Found 1-bit xor2 for signal <$xor0246> created at line 123.
+    Found 1-bit xor2 for signal <$xor0247> created at line 125.
+    Found 1-bit xor2 for signal <$xor0248> created at line 125.
+    Found 1-bit xor2 for signal <$xor0249> created at line 141.
+    Found 1-bit xor2 for signal <$xor0250> created at line 141.
+    Found 1-bit xor2 for signal <$xor0251> created at line 125.
+    Found 1-bit xor2 for signal <$xor0252> created at line 125.
+    Found 1-bit xor2 for signal <$xor0253> created at line 125.
+    Found 1-bit xor2 for signal <$xor0254> created at line 141.
+    Found 1-bit xor2 for signal <$xor0255> created at line 141.
+    Found 1-bit xor2 for signal <$xor0256> created at line 125.
+    Found 1-bit xor2 for signal <$xor0257> created at line 125.
+    Found 1-bit xor2 for signal <$xor0258> created at line 125.
+    Found 1-bit xor2 for signal <$xor0259> created at line 141.
+    Found 1-bit xor2 for signal <$xor0260> created at line 141.
+    Found 1-bit xor2 for signal <$xor0261> created at line 125.
+    Found 1-bit xor2 for signal <$xor0262> created at line 125.
+    Found 1-bit xor2 for signal <$xor0263> created at line 125.
+    Found 1-bit xor2 for signal <$xor0264> created at line 141.
+    Found 1-bit xor2 for signal <$xor0265> created at line 141.
+    Found 1-bit xor2 for signal <$xor0266> created at line 125.
+    Found 1-bit xor2 for signal <$xor0267> created at line 125.
+    Found 1-bit xor2 for signal <$xor0268> created at line 125.
+    Found 1-bit xor2 for signal <$xor0269> created at line 141.
+    Found 1-bit xor2 for signal <$xor0270> created at line 141.
+    Found 1-bit xor2 for signal <$xor0271> created at line 125.
+    Found 1-bit xor2 for signal <$xor0272> created at line 125.
+    Found 1-bit xor2 for signal <$xor0273> created at line 125.
+    Found 1-bit xor2 for signal <$xor0274> created at line 141.
+    Found 1-bit xor2 for signal <$xor0275> created at line 141.
+    Found 1-bit xor2 for signal <$xor0276> created at line 125.
+    Found 1-bit xor2 for signal <$xor0277> created at line 125.
+    Found 1-bit xor2 for signal <$xor0278> created at line 141.
+    Found 1-bit xor2 for signal <$xor0279> created at line 141.
+    Found 1-bit xor2 for signal <$xor0280> created at line 125.
+    Found 1-bit xor2 for signal <$xor0281> created at line 141.
+    Found 1-bit xor2 for signal <$xor0282> created at line 141.
+    Found 1-bit xor2 for signal <$xor0283> created at line 125.
+    Found 1-bit xor2 for signal <$xor0284> created at line 141.
+    Found 1-bit xor2 for signal <$xor0285> created at line 141.
+    Found 1-bit xor2 for signal <$xor0286> created at line 125.
+    Found 1-bit xor2 for signal <$xor0287> created at line 141.
+    Found 1-bit xor2 for signal <$xor0288> created at line 141.
+    Found 1-bit xor2 for signal <$xor0289> created at line 141.
+    Found 1-bit xor2 for signal <$xor0290> created at line 141.
+    Found 1-bit xor2 for signal <$xor0291> created at line 131.
+    Found 1-bit xor2 for signal <$xor0292> created at line 141.
+    Found 1-bit xor2 for signal <$xor0293> created at line 141.
+    Found 1-bit xor2 for signal <$xor0294> created at line 133.
+    Found 1-bit xor2 for signal <$xor0295> created at line 141.
+    Found 1-bit xor2 for signal <$xor0296> created at line 141.
+    Found 1-bit xor2 for signal <$xor0297> created at line 133.
+    Found 1-bit xor2 for signal <$xor0298> created at line 141.
+    Found 1-bit xor2 for signal <$xor0299> created at line 141.
+    Found 1-bit xor2 for signal <$xor0300> created at line 133.
+    Found 1-bit xor2 for signal <$xor0301> created at line 141.
+    Found 1-bit xor2 for signal <$xor0302> created at line 141.
+    Found 1-bit xor2 for signal <$xor0303> created at line 133.
+    Found 1-bit xor2 for signal <$xor0304> created at line 141.
+    Found 1-bit xor2 for signal <$xor0305> created at line 133.
+    Found 1-bit xor2 for signal <$xor0306> created at line 133.
+    Found 1-bit xor2 for signal <$xor0307> created at line 133.
+    Found 1-bit xor2 for signal <$xor0308> created at line 133.
+    Found 1-bit xor2 for signal <$xor0309> created at line 133.
+    Found 1-bit xor2 for signal <$xor0310> created at line 123.
+    Found 1-bit xor2 for signal <$xor0311> created at line 125.
+    Found 1-bit xor2 for signal <$xor0312> created at line 125.
+    Found 1-bit xor2 for signal <$xor0313> created at line 125.
+    Found 1-bit xor2 for signal <$xor0314> created at line 125.
+    Found 1-bit xor2 for signal <$xor0315> created at line 125.
+    Found 1-bit xor2 for signal <$xor0316> created at line 125.
+    Found 1-bit xor2 for signal <$xor0317> created at line 125.
+    Found 1-bit xor2 for signal <$xor0318> created at line 125.
+    Found 1-bit xor2 for signal <$xor0319> created at line 125.
+    Summary:
+	inferred 320 Xor(s).
+Unit <teta> synthesized.
+
+
+Synthesizing Unit <pi>.
+    Related source file is "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast_en/pi.vhd".
+Unit <pi> synthesized.
+
+
+Synthesizing Unit <rho>.
+    Related source file is "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast_en/rho.vhd".
+Unit <rho> synthesized.
+
+
+Synthesizing Unit <iota>.
+    Related source file is "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast_en/iota.vhd".
+Unit <iota> synthesized.
+
+
+Synthesizing Unit <keccak_round_blocks>.
+    Related source file is "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast_en/Keccak_round_blocks.vhd".
+    Found 320-bit register for signal <theta_reg<0>>.
+    Found 320-bit register for signal <theta_reg<1>>.
+    Found 320-bit register for signal <theta_reg<2>>.
+    Found 320-bit register for signal <theta_reg<3>>.
+    Found 320-bit register for signal <theta_reg<4>>.
+INFO:Xst:738 - HDL ADVISOR - 320 flip-flops were inferred for signal <theta_reg<0>>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+INFO:Xst:738 - HDL ADVISOR - 320 flip-flops were inferred for signal <theta_reg<1>>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+INFO:Xst:738 - HDL ADVISOR - 320 flip-flops were inferred for signal <theta_reg<2>>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+INFO:Xst:738 - HDL ADVISOR - 320 flip-flops were inferred for signal <theta_reg<3>>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+INFO:Xst:738 - HDL ADVISOR - 320 flip-flops were inferred for signal <theta_reg<4>>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Summary:
+	inferred 1600 D-type flip-flop(s).
+Unit <keccak_round_blocks> synthesized.
+
+
+Synthesizing Unit <Keccak_f>.
+    Related source file is "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast_en/Keccak_f.vhd".
+    Found 5-bit adder for signal <n_round$addsub0000> created at line 120.
+    Found 1-bit register for signal <ready_reg>.
+    Found 5-bit register for signal <round>.
+    Found 5-bit comparator lessequal for signal <round$cmp_le0000> created at line 145.
+    Found 320-bit register for signal <round_reg<0>>.
+    Found 320-bit register for signal <round_reg<1>>.
+    Found 320-bit register for signal <round_reg<2>>.
+    Found 320-bit register for signal <round_reg<3>>.
+    Found 320-bit register for signal <round_reg<4>>.
+    Found 1-bit register for signal <tic_toc_reg>.
+INFO:Xst:738 - HDL ADVISOR - 320 flip-flops were inferred for signal <round_reg<0>>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+INFO:Xst:738 - HDL ADVISOR - 320 flip-flops were inferred for signal <round_reg<1>>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+INFO:Xst:738 - HDL ADVISOR - 320 flip-flops were inferred for signal <round_reg<2>>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+INFO:Xst:738 - HDL ADVISOR - 320 flip-flops were inferred for signal <round_reg<3>>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+INFO:Xst:738 - HDL ADVISOR - 320 flip-flops were inferred for signal <round_reg<4>>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Summary:
+	inferred 1607 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <Keccak_f> synthesized.
+
+
+Synthesizing Unit <top_wrapper>.
+    Related source file is "/users/cosic/varribas/Documents/KECCAK_FPGA/vhd/fpga_fast_en/top_wrapper.vhd".
+    Found 1088-bit register for signal <s_in_reg>.
+    Found 1600-bit register for signal <s_out_reg>.
+INFO:Xst:738 - HDL ADVISOR - 1600 flip-flops were inferred for signal <s_out_reg>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+INFO:Xst:738 - HDL ADVISOR - 1088 flip-flops were inferred for signal <s_in_reg>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Summary:
+	inferred 2688 D-type flip-flop(s).
+Unit <top_wrapper> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 32x64-bit ROM                                         : 1
+# Adders/Subtractors                                   : 1
+ 5-bit adder                                           : 1
+# Registers                                            : 55
+ 1-bit register                                        : 2
+ 1088-bit register                                     : 1
+ 1600-bit register                                     : 1
+ 5-bit register                                        : 1
+ 64-bit register                                       : 50
+# Comparators                                          : 1
+ 5-bit comparator lessequal                            : 1
+# Xors                                                 : 4992
+ 1-bit xor2                                            : 4672
+ 1-bit xor5                                            : 320
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 32x64-bit ROM                                         : 1
+# Adders/Subtractors                                   : 1
+ 5-bit adder                                           : 1
+# Registers                                            : 5895
+ Flip-Flops                                            : 5895
+# Comparators                                          : 1
+ 5-bit comparator lessequal                            : 1
+# Xors                                                 : 4992
+ 1-bit xor2                                            : 4672
+ 1-bit xor5                                            : 320
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <top_wrapper> ...
+
+Optimizing unit <teta> ...
+
+Optimizing unit <keccak_round_blocks> ...
+
+Optimizing unit <Keccak_f> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top_wrapper, actual ratio is 32.
+Replicating register perm/ready_reg to handle IOB=TRUE attribute
+Replicating register s_out_reg_1087 to handle IOB=TRUE attribute
+Replicating register s_out_reg_1086 to handle IOB=TRUE attribute
+Replicating register s_out_reg_1085 to handle IOB=TRUE attribute
+Replicating register s_out_reg_1084 to handle IOB=TRUE attribute
+Replicating register s_out_reg_1083 to handle IOB=TRUE attribute
+Replicating register s_out_reg_1082 to handle IOB=TRUE attribute
+Replicating register s_out_reg_1081 to handle IOB=TRUE attribute
+Replicating register s_out_reg_1080 to handle IOB=TRUE attribute
+
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 5904
+ Flip-Flops                                            : 5904
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 5904  |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst                                | BUFGP                  | 3208  |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 1.814ns (Maximum Frequency: 551.146MHz)
+   Minimum input arrival time before clock: 2.227ns
+   Maximum output required time after clock: 2.775ns
+   Maximum combinational path delay: No path found
+
+=========================================================================
+
+Process "Synthesize - XST" completed successfully
+
+Started : "Translate".
+Running ngdbuild...
+Command Line: ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_wrapperV5.ucf -p xc5vlx50t-ff1136-3 top_wrapper.ngc top_wrapper.ngd
+
+Command Line:
+/esat/micas-data/software/xilinx_ise_14.7/ISE/bin/lin64/unwrapped/ngdbuild
+-intstyle ise -dd _ngo -nt timestamp -uc top_wrapperV5.ucf -p xc5vlx50t-ff1136-3
+top_wrapper.ngc top_wrapper.ngd
+
+Reading NGO file
+"/users/cosic/varribas/Documents/KECCAK_FPGA/KECCAK_FPGA/top_wrapper.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "top_wrapperV5.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGD file "top_wrapper.ngd" ...
+Total REAL time to NGDBUILD completion:  12 sec
+Total CPU time to NGDBUILD completion:   11 sec
+
+Writing NGDBUILD log file "top_wrapper.bld"...
+
+NGDBUILD done.
+
+Process "Translate" completed successfully
+
+Started : "Map".
+Running map...
+Command Line: map -intstyle ise -p xc5vlx50t-ff1136-3 -w -logic_opt on -ol high -xe n -t 1 -global_opt area -equivalent_register_removal on -mt off -cm area -ir off -pr b -lc area -power off -o top_wrapper_map.ncd top_wrapper.ngd top_wrapper.pcf
+Using target part "5vlx50tff1136-3".
+Running global optimization...
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 1 mins 21 secs 
+Total CPU  time at the beginning of Placer: 1 mins 16 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:3a65a34) REAL time: 1 mins 23 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:3a65a34) REAL time: 1 mins 23 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:3a65a34) REAL time: 1 mins 23 secs 
+
+Phase 4.37  Local Placement Optimization
+Phase 4.37  Local Placement Optimization (Checksum:3a65a34) REAL time: 1 mins 23 secs 
+
+Phase 5.33  Local Placement Optimization
+Phase 5.33  Local Placement Optimization (Checksum:3a65a34) REAL time: 1 mins 23 secs 
+
+Phase 6.32  Local Placement Optimization
+Phase 6.32  Local Placement Optimization (Checksum:3a65a34) REAL time: 1 mins 26 secs 
+
+Phase 7.2  Initial Clock and IO Placement
+.........
+Phase 7.2  Initial Clock and IO Placement (Checksum:94a4b3b3) REAL time: 1 mins 27 secs 
+
+Phase 8.36  Local Placement Optimization
+Phase 8.36  Local Placement Optimization (Checksum:94a4b3b3) REAL time: 1 mins 27 secs 
+
+Phase 9.30  Global Clock Region Assignment
+Phase 9.30  Global Clock Region Assignment (Checksum:94a4b3b3) REAL time: 1 mins 27 secs 
+
+Phase 10.3  Local Placement Optimization
+.......
+Phase 10.3  Local Placement Optimization (Checksum:91c74ed7) REAL time: 1 mins 27 secs 
+
+Phase 11.5  Local Placement Optimization
+Phase 11.5  Local Placement Optimization (Checksum:91c74ed7) REAL time: 1 mins 27 secs 
+
+Phase 12.8  Global Placement
+..........................................................................................................................
+Phase 12.8  Global Placement (Checksum:ea88275) REAL time: 1 mins 31 secs 
+
+Phase 13.29  Local Placement Optimization
+Phase 13.29  Local Placement Optimization (Checksum:ea88275) REAL time: 1 mins 31 secs 
+
+Phase 14.5  Local Placement Optimization
+Phase 14.5  Local Placement Optimization (Checksum:ea88275) REAL time: 1 mins 31 secs 
+
+Phase 15.18  Placement Optimization
+Phase 15.18  Placement Optimization (Checksum:2eeda5fe) REAL time: 1 mins 44 secs 
+
+Phase 16.5  Local Placement Optimization
+Phase 16.5  Local Placement Optimization (Checksum:2eeda5fe) REAL time: 1 mins 44 secs 
+
+Phase 17.34  Placement Validation
+Phase 17.34  Placement Validation (Checksum:2eeda5fe) REAL time: 1 mins 45 secs 
+
+Total REAL time to Placer completion: 1 mins 45 secs 
+Total CPU  time to Placer completion: 1 mins 39 secs 
+Running physical synthesis...
+
+Physical synthesis completed.
+Running post-placement packing...
+Writing output files...
+
+Design Summary:
+Number of errors:      0
+Number of warnings: 5887
+Slice Logic Utilization:
+  Number of Slice Registers:                 5,887 out of  28,800   20%
+    Number used as Flip Flops:               5,887
+  Number of Slice LUTs:                      3,340 out of  28,800   11%
+    Number used as logic:                    3,340 out of  28,800   11%
+      Number using O6 output only:           1,541
+      Number using O5 and O6:                1,799
+
+Slice Logic Distribution:
+  Number of occupied Slices:                 1,505 out of   7,200   20%
+  Number of LUT Flip Flop pairs used:        5,995
+    Number with an unused Flip Flop:           108 out of   5,995    1%
+    Number with an unused LUT:               2,655 out of   5,995   44%
+    Number of fully used LUT-FF pairs:       3,232 out of   5,995   53%
+    Number of unique control sets:               4
+    Number of slice register sites lost
+      to control set restrictions:               5 out of  28,800    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        22 out of     480    4%
+    IOB Flip Flops:                             17
+
+Specific Feature Utilization:
+  Number of BUFG/BUFGCTRLs:                      2 out of      32    6%
+    Number used as BUFGs:                        2
+
+Average Fanout of Non-Clock Nets:                3.10
+
+Peak Memory Usage:  1194 MB
+Total REAL time to MAP completion:  1 mins 54 secs 
+Total CPU time to MAP completion:   1 mins 48 secs 
+
+Mapping completed.
+See MAP report file "top_wrapper_map.mrp" for details.
+
+Process "Map" completed successfully
+
+Started : "Place & Route".
+Running par...
+Command Line: par -w -intstyle ise -ol high -xe n -mt off top_wrapper_map.ncd top_wrapper.ncd top_wrapper.pcf
+
+
+
+Constraints file: top_wrapper.pcf.
+Loading device for application Rf_Device from file '5vlx50t.nph' in environment
+/esat/micas-data/software/xilinx_ise_14.7/ISE/.
+   "top_wrapper" is an NCD, version 3.2, device xc5vlx50t, package ff1136, speed -3
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 0.950 Volts. (default - Range: 0.950 to 1.050 Volts)
+
+INFO:Par:282 - No user timing constraints were detected or you have set the option to ignore timing constraints ("par
+   -x"). Place and Route will run in "Performance Evaluation Mode" to automatically improve the performance of all
+   internal clocks in this design. Because there are not defined timing requirements, a timing score will not be
+   reported in the PAR report in this mode. The PAR timing summary will list the performance achieved for each clock.
+   Note: For the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high".
+
+Device speed data version:  "PRODUCTION 1.73 2013-10-13".
+
+
+
+Device Utilization Summary:
+
+   Number of BUFGs                           2 out of 32      6%
+   Number of ILOGICs                         8 out of 560     1%
+   Number of External IOBs                  22 out of 480     4%
+      Number of LOCed IOBs                   0 out of 22      0%
+
+   Number of OLOGICs                         9 out of 560     1%
+   Number of Slices                       1505 out of 7200   20%
+   Number of Slice Registers              5887 out of 28800  20%
+      Number used as Flip Flops           5887
+      Number used as Latches                 0
+      Number used as LatchThrus              0
+
+   Number of Slice LUTS                   3340 out of 28800  11%
+   Number of Slice LUT-Flip Flop pairs    5995 out of 28800  20%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 11 secs 
+Finished initial Timing Analysis.  REAL time: 11 secs 
+
+Starting Router
+
+
+Phase  1  : 23517 unrouted;      REAL time: 12 secs 
+
+Phase  2  : 19358 unrouted;      REAL time: 13 secs 
+
+Phase  3  : 11226 unrouted;      REAL time: 19 secs 
+
+Phase  4  : 11983 unrouted; (Par is working to improve performance)     REAL time: 25 secs 
+
+Updating file: top_wrapper.ncd with current fully routed design.
+
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 2 secs 
+
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 8 secs 
+
+Updating file: top_wrapper.ncd with current fully routed design.
+
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 mins 26 secs 
+
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 mins 55 secs 
+
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 mins 55 secs 
+
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 mins 56 secs 
+
+Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 mins 57 secs 
+Total REAL time to Router completion: 5 mins 57 secs 
+Total CPU time to Router completion: 6 mins 19 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+INFO:Par:459 - The Clock Report is not displayed in the non timing-driven mode.
+Timing Score: 0 (Setup: 0, Hold: 0)
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     3.732ns|     N/A|           0
+  _BUFGP                                    | HOLD        |     0.237ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 6 mins 2 secs 
+Total CPU time to PAR completion: 6 mins 24 secs 
+
+Peak Memory Usage:  951 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 0
+Number of info messages: 2
+
+Writing design to file top_wrapper.ncd
+
+
+
+PAR done!
+
+Process "Place & Route" completed successfully
+
+Started : "Generate Post-Place & Route Static Timing".
+Running trce...
+Command Line: trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top_wrapper.twx top_wrapper.ncd -o top_wrapper.twr top_wrapper.pcf -ucf top_wrapperV5.ucf
+Loading device for application Rf_Device from file '5vlx50t.nph' in environment
+/esat/micas-data/software/xilinx_ise_14.7/ISE/.
+   "top_wrapper" is an NCD, version 3.2, device xc5vlx50t, package ff1136, speed
+-3
+
+Analysis completed Tue Mar 26 15:48:53 2019
+--------------------------------------------------------------------------------
+
+Generating Report ...
+
+Number of warnings: 0
+Total time: 11 secs 
+
+Process "Generate Post-Place & Route Static Timing" completed successfully
