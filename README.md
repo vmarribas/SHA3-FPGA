@@ -2,7 +2,7 @@
 
 VHDL code for the FPGA specific SHA-3 implementations published in below paper:
 
->> Victor Arribas, "Beyond the Limits: SHA-3 in Just 49 Slices". FPL 2019: 239-245
+> Victor Arribas, "Beyond the Limits: SHA-3 in Just 49 Slices". FPL 2019: 239-245
 
 If you use these implementations in you work, you can cite this paper as:
 ```
@@ -15,3 +15,5 @@ If you use these implementations in you work, you can cite this paper as:
   year      = {2019}
 }
 ```
+
+Thanks!
